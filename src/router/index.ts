@@ -1,16 +1,15 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
-import { App } from 'vue'
-import routes from './routes'
-import layoutRoutes from './autoLoad'
+import {createRouter, createWebHashHistory} from 'vue-router'
+import {App} from 'vue'
+// @ts-ignore
+import routes from './routes.ts'
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes: [...routes, ...layoutRoutes]
+  routes: routes
 })
 
-import './autoLoad.ts'
-
-export function setupRouter(app: App) {
+// 路由 hooks
+export function setUpRouter(app: App<Element>) {
   app.use(router)
 }
 

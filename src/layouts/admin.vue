@@ -1,10 +1,13 @@
-<script setup lang="ts">
-</script>
 <template>
-  <h2>admin.vue</h2>
-  <hr/>
-  <router-view/>
+  <div class="">
+    <h1>admin</h1>
+    <span>--子路由--</span>
+    <router-view/>
+  </div>
 </template>
+
+<script setup>
+</script>
 
 <style scoped lang="scss">
 .test {

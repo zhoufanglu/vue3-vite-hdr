@@ -1,12 +1,11 @@
-<script setup lang=ts>
-
-</script>
-
 <template>
-  <div class="mail">
-    member/mail
+  <div class="">
+    <h1>member</h1>
   </div>
 </template>
+
+<script setup>
+</script>
 
 <style scoped lang="scss">
 .test {

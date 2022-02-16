@@ -1,21 +1,16 @@
-import {RouteRecordRaw} from 'vue-router'
-
-const home = () => import('@/views/home.vue')
-
-/*import adminRoutes from './modules/admin'
-import manageRoutes from './modules/manage'*/
-
+import { RouteRecordRaw } from 'vue-router'
 
 const routes = [
   {
-    path: '/home',
-    component: home,
-  },
-  {
     path: '/',
-    redirect: '/home'
-  },
-/*  ...manageRoutes,
-  ...adminRoutes*/
+    component: () => import('../layouts/admin.vue'),
+    children: [
+      {
+        path: '/admin',
+        component: () => import('../views/home.vue')
+      }
+    ]
+  }
 ] as RouteRecordRaw[]
+
 export default routes
