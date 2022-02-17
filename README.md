@@ -5,3 +5,7 @@ This template should help get you started developing with Vue 3 and Typescript i
 ## 项目简要
 * 根据大神后盾人认真学习vue3
 
+## 1、项目创建
+
+## 2、路由
+* 路由声明，路由list导出

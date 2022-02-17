@@ -1,12 +1,15 @@
 <template>
   <div class="">
-    <h1>布局admin</h1>
-    <span>--子路由--</span>
-    <router-view/>
+    admin/user
   </div>
 </template>
 
-<script setup>
+<script>
+  export default {
+    route: {
+      path: '/user'
+    }
+  }
 </script>
 
 <style scoped lang="scss">

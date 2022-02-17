@@ -3,6 +3,8 @@ import App from './App.vue'
 
 import router, {setUpRouter} from './router'
 
+console.log('环境变量', import.meta.env)
+
 async function bootstrap() {
   const app = createApp(App)
   setUpRouter(app)
@@ -11,4 +13,4 @@ async function bootstrap() {
   app.mount('#app')
 }
 
-await bootstrap()
+bootstrap()

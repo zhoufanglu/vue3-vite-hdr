@@ -1,6 +1,8 @@
 <template>
   <div class="">
-    <h1>member</h1>
+    <h1>布局member</h1>
+    <span>--子路由--</span>
+    <router-view/>
   </div>
 </template>
 

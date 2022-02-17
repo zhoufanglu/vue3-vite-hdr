@@ -1,16 +1,16 @@
 import { RouteRecordRaw } from 'vue-router'
 
 const routes = [
-  {
-    path: '/',
-    component: () => import('../layouts/admin.vue'),
+  /*{
+    path: '/home',
+    component: () => import('@/views/home.vue'),
     children: [
       {
         path: '/admin',
-        component: () => import('../views/home.vue')
+        component: () => import('@/views/home.vue')
       }
     ]
-  }
+  }*/
 ] as RouteRecordRaw[]
 
 export default routes

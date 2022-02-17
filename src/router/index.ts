@@ -3,9 +3,13 @@ import {App} from 'vue'
 // @ts-ignore
 import routes from './routes.ts'
 
+// autoload
+import layoutRoutes from './autolLoad'
+console.log('layoutRoute', layoutRoutes)
+
 const router = createRouter({
   history: createWebHashHistory(),
-  routes: routes
+  routes: [...routes, ...layoutRoutes]
 })
 
 // 路由 hooks
